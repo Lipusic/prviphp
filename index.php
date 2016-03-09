@@ -29,7 +29,7 @@
 
 
     $rezultat = $_GET['broj1']+$_GET['broj2'];
-    echo('<br><br>Rezultat je:'. $rezultat);
+    echo('<br><br><br>Rezultat je:'. $rezultat);
 ?>
 
 <p>
