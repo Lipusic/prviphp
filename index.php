@@ -8,32 +8,25 @@
 <body>
 <h1>Prvi PHP</h1>
 
-<form action="index.php">
+<form method="post" action="rezultat.php">
+
     <fieldset>
-        <legend>Unesite brojeve koje želite zbrojiti:</legend>
+
+    <legend>Unesite brojeve koje želite zbrojiti:</legend>
     Prvi Broj:<br>
     <input type="text" name="broj1"><br>
     Drugi Broj:<br>
     <input type="text" name="broj2"><br>
+    Treći Broj:<br>
+    <input type="text" name="broj3"><br>
+    Vaše ime:<br>
+    <input type="text" name="ime"> <br>
     <br>
     <input type="submit" value="Izračunaj">
+
     </fieldset>
+
 </form>
 
-<?php
-    echo('Ovo je prije odlomka<br>');
-    echo('Super, jos cemo dodati<br>');
-
-    echo(date('d.m.Y.'));
-
-
-
-    $rezultat = $_GET['broj1']+$_GET['broj2'];
-    echo('<br><br><br>Rezultat je:'. $rezultat);
-?>
-
-<p>
-    Ovo je odlomak
-</p>
 </body>
 </html>
